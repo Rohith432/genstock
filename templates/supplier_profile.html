@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GenStocks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <div class="btn-group">
+                        <button class="btn btn-dark btn-dark" type="button">
+                            Categories
+                        </button>
+                        <button type="button" class="btn btn-sm btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Food Grains</a></li>
+                            <li><a class="dropdown-item" href="#">Oils</a></li>
+                            <li><a class="dropdown-item" href="#">Masala & Spices</a></li>
+                            <li><a class="dropdown-item" href="#">Dry Fruits</a></li>
+                            <li><a class="dropdown-item" href="#">Snacks</a></li>
+                            <li><a class="dropdown-item" href="#">Cleaning & housing</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Settings
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">LOG OUT</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--end of navigation bar-->
+    <!--First name-->
+    <form action="{{url_for('adds')}}" method="POST">
+    <div class="container py-5 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-m-10">
+                <input type="text" name= "fname" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
+        <!--end of First name-->
+    </div>
+    <!--Middle Name-->
+    <div class="container py-2 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Middle Name</label>
+            <div class="col-m-10">
+                <input type="text" name= "mname" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
+        <!--end of Middle name-->
+    </div>
+    <!--last name-->
+    <div class="container py-4 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-m-10">
+                <input type="text" name= "lname" class="form-control" id="exampleFormControlInput1">
+
+            </div>
+        </div>
+        <!--end of last name-->
+    </div>
+    <!--phone number-->
+    <div class="container py-2 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-5 col-form-label">Phone Number</label>
+            <div class="col-m-10">
+                <input type="text"  name= "pno" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
+        <!--end of phone number-->
+    </div>
+    <!--office name-->
+    <div class="container py-2 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-5 col-form-label">Office Name</label>
+            <div class="col-m-10">
+                <input type="text" name= "oname" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
+        <!--end of office name-->
+    </div>
+    <!--licence id-->
+    <div class="container py-2 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-5 col-form-label">License ID</label>
+            <div class="col-m-10">
+                <input type="text" name= "lic_id" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
+        <!--end of licence id-->
+    </div>
+    <!--Address-->
+    <div class="container py-2 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Shop Address</label>
+            <div class="col-m-10">
+                <input type="text" name= "shop_addr" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
+        <!--Address-->
+    </div>
+    <!--aadhar no-->
+    <div class="container py-2 h-50">
+        <div class="mb-3 row">
+            <label for="exampleFormControlInput1" class="col-sm-5 col-form-label">Aadhar Number</label>
+            <div class="col-m-10">
+                <input type="text" name= "aad_no" class="form-control" id="exampleFormControlInput1">
+            </div>
+        </div>
+        <!--end of aadhar no-->
+    </div>
+    <!--done button-->
+    <div class="container py-2 h-50">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-dark me-md-2" type="submit">Submit</button>
+            <button class="btn btn-dark me-md-2" type="button">Cancel</button>
+
+</form>
+        </div>
+    </div>
+    <!--end of done button-->
+</body>
+</html>
